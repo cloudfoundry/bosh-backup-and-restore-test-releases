@@ -1,0 +1,26 @@
+---
+name: redis-server
+templates:
+  redis-server-ctl.sh.erb: bin/redis-server-ctl.sh
+  redis.conf.erb: conf/redis.conf
+  b-pre-backup-lock: bin/b-pre-backup-lock
+  b-post-backup-unlock: bin/b-post-backup-unlock
+  b-backup: bin/b-backup
+  b-restore: bin/b-restore
+
+packages:
+- redis
+
+properties:
+  redis.password:
+    description: Password used for redis access
+  redis.persistence:
+    description: yes/no
+  redis.maxclients:
+    description: max clients
+  redis.workdir:
+    default: /var/vcap/store/redis-server
+    description: Working directory for redis process
+  redis.pidfile:
+    default: /var/vcap/sys/run/redis.pid
+    description: pidfile of redis server

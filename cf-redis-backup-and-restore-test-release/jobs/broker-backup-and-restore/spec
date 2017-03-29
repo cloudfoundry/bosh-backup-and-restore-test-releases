@@ -1,0 +1,9 @@
+---
+name: broker-backup-and-restore
+templates:
+  b-backup: bin/b-backup
+  b-restore: bin/b-restore
+
+packages: []
+
+properties: {}
