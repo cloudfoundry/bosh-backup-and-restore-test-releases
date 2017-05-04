@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -e
+
+
+echo "this is a backup" > $ARTIFACT_DIRECTORY/backup

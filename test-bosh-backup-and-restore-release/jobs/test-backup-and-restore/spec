@@ -1,0 +1,10 @@
+---
+name: test-backup-and-restore
+
+templates:
+  backup: bin/b-backup
+  restore: bin/b-restore
+
+packages: []
+
+properties: {}
