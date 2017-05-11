@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-cp -r $ARTIFACT_DIRECTORY* /var/vcap/store/
+cp -r ${BBR_ARTIFACT_DIRECTORY}* /var/vcap/store/
 
 /var/vcap/bosh/bin/monit restart all
 
