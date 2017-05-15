@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -ue
 
-cp $ARTIFACT_DIRECTORY/backup /var/vcap/store/
+mkdir -p /var/vcap/store/test-backup-and-restore
+cp $ARTIFACT_DIRECTORY/backup /var/vcap/store/test-backup-and-restore
