@@ -2,8 +2,8 @@
 name: test-backup-and-restore
 
 templates:
-  backup: bin/b-backup
-  restore: bin/b-restore
+  backup: bin/bbr/b-backup
+  restore: bin/bbr/b-restore
 
 packages: []
 

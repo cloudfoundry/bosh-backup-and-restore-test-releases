@@ -3,10 +3,10 @@ name: redis-server
 templates:
   redis-server-ctl.sh.erb: bin/redis-server-ctl.sh
   redis.conf.erb: conf/redis.conf
-  b-pre-backup-lock: bin/b-pre-backup-lock
-  b-post-backup-unlock: bin/b-post-backup-unlock
-  b-backup: bin/b-backup
-  b-restore: bin/b-restore
+  pre-backup-lock: bin/bbr/pre-backup-lock
+  post-backup-unlock: bin/bbr/post-backup-unlock
+  backup: bin/bbr/backup
+  restore: bin/bbr/restore
 
 packages:
 - redis

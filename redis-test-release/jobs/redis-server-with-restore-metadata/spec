@@ -3,8 +3,8 @@ name: redis-server-with-restore-metadata
 templates:
   redis-server-ctl.sh.erb: bin/redis-server-ctl.sh
   redis.conf.erb: conf/redis.conf
-  b-restore: bin/b-restore
-  b-metadata: bin/b-metadata
+  restore: bin/bbr/restore
+  metadata: bin/bbr/metadata
 
 packages:
 - redis
