@@ -1,8 +1,8 @@
 ---
 name: broker-backup-and-restore
 templates:
-  b-backup: bin/b-backup
-  b-restore: bin/b-restore
+  backup: bin/bbr/backup
+  restore: bin/bbr/restore
 
 packages: []
 
