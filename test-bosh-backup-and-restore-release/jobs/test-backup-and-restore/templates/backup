@@ -2,4 +2,6 @@
 
 set -ue
 
-echo "this is a backup" > $ARTIFACT_DIRECTORY/backup
+echo "this is a backup" > "$ARTIFACT_DIRECTORY"/backup
+
+sleep 10
