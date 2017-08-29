@@ -1,0 +1,11 @@
+---
+name: capi-consumer-2
+
+templates:
+  pre-backup-lock: bin/bbr/pre-backup-lock
+  post-backup-unlock: bin/bbr/post-backup-unlock
+  metadata: bin/bbr/metadata
+
+packages: []
+
+properties: {}
