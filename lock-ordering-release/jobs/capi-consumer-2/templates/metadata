@@ -3,4 +3,4 @@
 echo '---
 should_be_locked_before:
 - job_name: capi
-  release:
+  release: lock-ordering
