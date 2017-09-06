@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+echo '---
+should_be_locked_before:
+- job_name: capi-consumer-1
+  release: lock-ordering
+- job_name: capi-consumer-2
+  release: lock-ordering
+'
