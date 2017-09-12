@@ -5,6 +5,7 @@ templates:
   redis.conf.erb: conf/redis.conf
   pre-backup-lock: bin/bbr/pre-backup-lock
   post-backup-unlock: bin/bbr/post-backup-unlock
+  pre-restore-lock: bin/bbr/pre-restore-lock
   post-restore-unlock: bin/bbr/post-restore-unlock
   backup: bin/bbr/backup
   restore: bin/bbr/restore
