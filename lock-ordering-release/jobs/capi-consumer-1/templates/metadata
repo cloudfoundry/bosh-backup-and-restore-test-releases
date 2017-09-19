@@ -1,8 +1,7 @@
 #!/bin/bash -e
 
 echo '---
-backup:
-  should_be_locked_before:
-  - job_name: capi
-    release: lock-ordering
+should_be_locked_before:
+- job_name: capi
+  release: lock-ordering
 '
