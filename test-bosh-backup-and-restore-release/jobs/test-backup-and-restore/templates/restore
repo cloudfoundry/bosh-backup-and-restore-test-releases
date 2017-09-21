@@ -3,6 +3,6 @@
 set -ue
 
 mkdir -p /var/vcap/store/test-backup-and-restore
-cp $"ARTIFACT_DIRECTORY"/backup /var/vcap/store/test-backup-and-restore
+cp "$ARTIFACT_DIRECTORY"/backup /var/vcap/store/test-backup-and-restore
 
 sleep 10
