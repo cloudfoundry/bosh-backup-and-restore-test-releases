@@ -1,0 +1,4 @@
+#!/bin/bash -e
+
+echo "output from pre-restore-lock" > /tmp/pre-restore-lock.out
+date >> /tmp/pre-restore-lock.out

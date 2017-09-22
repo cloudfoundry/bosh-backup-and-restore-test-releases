@@ -7,4 +7,8 @@ backup:
     release: lock-ordering
   - job_name: capi-consumer-2
     release: lock-ordering
+restore:
+  should_be_locked_before:
+  - job_name: redis-server
+    release: redis-test
 '
