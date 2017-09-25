@@ -1,12 +1,10 @@
 #!/bin/bash -e
 
 echo '---
-backup:
-  should_be_locked_before:
-  - job_name: redis-server
-    release: redis-test
-restore:
-  should_be_locked_before:
-  - job_name: redis-server
-    release: lock-ordering
+backup_should_be_locked_before:
+- job_name: redis-server
+  release: redis-test
+restore_should_be_locked_before:
+- job_name: redis-server
+  release: lock-ordering
 '

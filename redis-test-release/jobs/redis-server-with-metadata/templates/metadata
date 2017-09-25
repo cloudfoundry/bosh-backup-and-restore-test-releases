@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
 echo "---
-backup:
-  name: custom-redis-backup"
+backup_name: custom-redis-backup"
