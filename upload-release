@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -ue
+
+export BOSH_ENVIRONMENT=https://lite-bosh-uaa.backup-and-restore.cf-app.com
+export BOSH_CLIENT="$(lpass show GardenBoshUAADirectorGCP --username)"
+export BOSH_CLIENT_SECRET="$(lpass show GardenBoshUAADirectorGCP --password)"
+export BOSH_CA_CERT=~/workspace/bosh-backup-and-restore-meta/certs/lite-bosh-uaa.backup-and-restore.cf-app.com.crt
+
+(
+  cd fixtures/releases/${1}
+  bosh -n create-release --force
+  bosh upload-release --rebase
+)
