@@ -2,7 +2,7 @@
 
 set -ue
 
-export BOSH_ENVIRONMENT=https://lite-bosh-uaa.backup-and-restore.cf-app.com
+export BOSH_ENVIRONMENT=https://lite-bosh.backup-and-restore.cf-app.com
 export BOSH_CLIENT="$(lpass show GardenBoshUAADirectorGCP --username)"
 export BOSH_CLIENT_SECRET="$(lpass show GardenBoshUAADirectorGCP --password)"
 export BOSH_CA_CERT=~/workspace/bosh-backup-and-restore-meta/certs/lite-bosh-uaa.backup-and-restore.cf-app.com.crt
