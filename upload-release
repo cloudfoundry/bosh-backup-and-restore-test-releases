@@ -3,9 +3,9 @@
 set -ue
 
 export BOSH_ENVIRONMENT=https://lite-bosh.backup-and-restore.cf-app.com
-export BOSH_CLIENT="$(lpass show GardenBoshUAADirectorGCP --username)"
-export BOSH_CLIENT_SECRET="$(lpass show GardenBoshUAADirectorGCP --password)"
-export BOSH_CA_CERT=~/workspace/bosh-backup-and-restore-meta/certs/lite-bosh-uaa.backup-and-restore.cf-app.com.crt
+export BOSH_CLIENT="$(lpass show LiteBoshDirector --username)"
+export BOSH_CLIENT_SECRET="$(lpass show LiteBoshDirector --password)"
+export BOSH_CA_CERT=~/workspace/bosh-backup-and-restore-meta/certs/lite-bosh.backup-and-restore.cf-app.com.crt
 
 (
   cd fixtures/releases/${1}
