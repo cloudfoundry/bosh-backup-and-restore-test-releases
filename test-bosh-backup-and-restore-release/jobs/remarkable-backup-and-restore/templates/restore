@@ -3,4 +3,4 @@
 set -ue
 
 mkdir -p /var/vcap/store/remarkable-backup-and-restore
-cp $ARTIFACT_DIRECTORY/backup /var/vcap/store/remarkable-backup-and-restore
+cp "$BBR_ARTIFACT_DIRECTORY/backup" /var/vcap/store/remarkable-backup-and-restore
