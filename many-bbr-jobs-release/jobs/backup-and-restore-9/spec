@@ -1,7 +1,11 @@
 ---
 templates:
+  pre-backup-lock: bin/bbr/pre-backup-lock
   backup: bin/bbr/backup
+  post-backup-unlock: bin/bbr/post-backup-unlock
+  pre-restore-lock: bin/bbr/pre-restore-lock
   restore: bin/bbr/restore
+  post-restore-unlock: bin/bbr/post-restore-unlock
 
 packages: []
 
