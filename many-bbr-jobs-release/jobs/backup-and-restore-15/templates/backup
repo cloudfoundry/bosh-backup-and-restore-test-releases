@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# write a 20M file of random bits
-dd if=/dev/urandom of="${BBR_ARTIFACT_DIRECTORY}/random-bits" bs=1M count=20
+# write a 1M file of random bits
+dd if=/dev/urandom of="${BBR_ARTIFACT_DIRECTORY}/random-bits" bs=1M count=1
 
 echo "backup!"
