@@ -1,5 +1,5 @@
 ---
-name: redis-server-with-disabled-bbr-job
+name: disabled-job
 templates:
   redis-server-ctl.sh.erb: bin/redis-server-ctl.sh
   redis.conf.erb: conf/redis.conf
