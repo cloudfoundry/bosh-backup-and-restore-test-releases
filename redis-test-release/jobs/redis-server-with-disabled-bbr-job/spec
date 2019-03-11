@@ -9,6 +9,7 @@ templates:
   post-restore-unlock: bin/bbr/post-restore-unlock
   backup: bin/bbr/backup
   restore: bin/bbr/restore
+  metadata: bin/bbr/metadata
 
 packages:
 - redis
